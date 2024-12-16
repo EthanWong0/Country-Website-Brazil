@@ -1,0 +1,152 @@
+<html>
+    <head>
+     <title>Brazil</title>
+     <link href="style.css" rel="stylesheet" type="text/css">
+	 <link href="Culture2.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+       <div id="banner" class="container center column">
+        <h1>Landmarks</h1>
+		<h3>View images of beautiful Brazilian landmarks.</h3>
+		<br>
+       </div>
+	   
+    <nav class="container">
+     <a href="Homepage.html" id="left">Home</a>
+	<div class="dropdown">
+		  <button class="dropbtn" style="background-color:#519E8A;">Culture</button>
+		  <div class="dropdown-content">
+			<a href="Culture.html">Food</a>
+			<a href="Culture2.html">Landmarks</a>
+		  </div>
+	</div>
+     <a href="History.html" id="right">History</a>
+	 <a href="FunFacts.html" id="right">Fun Facts</a>
+    </nav>
+	
+	<div id="intro" class="container center">
+	 <h1>View Brazilian Culture through landmarks</h1>
+	</div>
+	   <div id="containermain">
+	    <div class="container center">
+	     <h2>Landmarks</h2>
+	    </div>
+	    <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+	 <div class="container" style="margin-top:20px; margin-left:50px;">
+	  <div style="flex:1">
+      <img src="landmark1.png" style="width:100%">
+	 </div>
+	 
+	 <div style="flex:1">
+	  <p>An iconic massive statue, Christ the Redeemer resides on top of the Corcovado Mountain in Rio de Janeiro, a city in Brazil. The statue is 124 feet tall and was built throughout 1922 to 1931. It has become a famous landmark in Brazil and a symbol of Christianity throughout the world.</p>
+	 </div>
+	</div>
+	 
+	
+	
+	
+	
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+	<div class="container" style="margin-top:20px; margin-left:50px;">
+	  <div style="flex:1">
+      <img src="landmark2.png" style="width:100%">
+	 </div>
+	 
+	 <div style="flex:1">
+	  <p>Another landmark in Rio De Janeiro, Sugarloaf Mountain offers a beautiful view of the city. Tourists can take a cable car ride up Sugarloaf Mountain itself high into the sky, and once there can admire the city from the peak.</p>
+	 </div>
+	</div>
+	
+	
+
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <div class="container" style="margin-top:20px; margin-left:50px;">
+	  <div style="flex:1">
+      <img src="landmark3.png" style="width:100%">
+	 </div>
+	 
+	 <div style="flex:1">
+	  <p>This landmark is a Cathedral in São Paulo, and is its most famous place of worship. It is one of the largest Gothic cathedrals in the world and can hold thousands of worshippers within it.</p>
+	 </div>
+	</div>
+</div>	
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <div class="container" style="margin-top:20px; margin-left:50px;">
+	  <div style="flex:1">
+      <img src="landmark4.png" style="width:100%">
+	 </div>
+	 
+	 <div style="flex:1">
+	  <p>The Altino Arantes Building, which is located in São Paulo, is a massive 36 story skyscraper built in 1937 in order to serve as the headquarters for the Bank of State. It was inspired by the Empire State Building and is the 3rd tallest building in São Paulo today.</p>
+	 </div>
+	</div>
+	
+	
+	
+
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)" style="opacity:0">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)" style="opacity:0">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+ </div>
+
+	 <div id="footer" class="container center">
+	  <p>Copyright 2024</p>
+	 </div>
+	 
+  </body>
+   <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+ </script>
+</html>

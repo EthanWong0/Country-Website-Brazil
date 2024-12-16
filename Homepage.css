@@ -1,0 +1,38 @@
+
+#banner{
+	height:100px;
+	background-color:#476A6F;
+	color:white;
+}
+
+#text{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#7EB09B;
+	color:#476A6F;
+	font-size:24;
+}
+
+#introduction p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10;
+}
+
+#main p{
+	font-size:24;
+	color:#476A6F;
+}
+
+#pictures{
+	background-color:pink;
+	color:purple;
+	font-size:20;
+}
+
+#purple{
+	background-color:#C5C9A4;
+	padding:20px;
+}
+
+body{
+	background-color:#C5C9A4;
+}
